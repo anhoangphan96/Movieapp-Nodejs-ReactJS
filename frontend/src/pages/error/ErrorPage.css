@@ -1,0 +1,10 @@
+.backgroundcontainer {
+  background-color: black;
+  height: 100vh;
+  padding: 16px 0px;
+}
+.backgroundcontainer > h2 {
+  color: white;
+  text-align: center;
+  padding: 120px 0px;
+}

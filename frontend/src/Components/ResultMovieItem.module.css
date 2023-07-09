@@ -1,0 +1,8 @@
+/* Gắng các style cần thiết để thiết kế ResultMovieItem như yêu cầu */
+
+.movieItem {
+  width: 132px;
+  height: 240px;
+
+  object-fit: cover;
+}

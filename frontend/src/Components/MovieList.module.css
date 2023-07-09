@@ -1,0 +1,9 @@
+/* Gắng các style cần thiết để thiết kế MovieList như yêu cầu */
+
+.container {
+  background-color: #000;
+  color: white;
+}
+.movieList {
+  width: 100%;
+}

@@ -1,0 +1,24 @@
+/* Gắng các style cần thiết để thiết kế ResultList như yêu cầu */
+
+.container {
+  color: white;
+}
+.container > h2 {
+  margin: 12px 24px;
+  font-size: 20px;
+}
+.resultList {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  margin-left: 14px;
+  padding: 8px 0px 8px 14px;
+}
+.noList {
+  justify-content: center;
+}
+.noMovie {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}

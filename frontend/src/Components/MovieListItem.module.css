@@ -1,0 +1,22 @@
+/* Gắng các style cần thiết để thiết kế MovieListItem như yêu cầu */
+
+.container {
+  width: 100%;
+  margin-top: 24px;
+  padding-bottom: 48px;
+}
+.container h2 {
+  padding-left: 14px;
+  font-size: 18px;
+  color: white;
+}
+.listMovieItem {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  margin-left: 14px;
+  padding: 8px 0px 8px 14px;
+}
+.errorFetch {
+  text-align: center;
+}

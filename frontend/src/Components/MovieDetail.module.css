@@ -1,0 +1,42 @@
+/* Gắng các style cần thiết để thiết kế movieDetail như yêu cầu */
+
+.movieDetailContainer {
+  width: 100%;
+  display: flex;
+}
+.movieDetailContent {
+  padding: 36px 18px 18px 18px;
+  width: 50%;
+}
+.movieDetailContent h2 {
+  margin-left: 18px;
+  padding: 0px 0px 18px 0px;
+  font-size: 24px;
+  border-bottom: 2px solid white;
+}
+
+.movieDetailContent h4 {
+  font-size: 14px;
+  margin: 0px 0px 0px 18px;
+}
+.movieDetailContent > h3 {
+  font-size: 18px;
+  text-align: center;
+  color: red;
+  margin: 18px 0px 0px 18px;
+}
+.movieDetailContent > p {
+  font-size: 14px;
+  margin: 18px 0px 0px 18px;
+}
+.movieTrailerFrame {
+  padding: 36px 18px 18px 0px;
+  width: 50%;
+}
+
+.movieTrailerFrame img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transform: none;
+}

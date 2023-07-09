@@ -1,0 +1,16 @@
+/* Gắng các style cần thiết để thiết kế MovieItem như yêu cầu */
+
+img {
+  transition: all 0.3s ease-in-out;
+  object-fit: cover;
+  width: 180px;
+  height: 102px;
+}
+img:hover {
+  transform: scale(1.1);
+}
+
+.netflix {
+  width: 132px;
+  height: 240px;
+}
