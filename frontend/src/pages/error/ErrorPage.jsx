@@ -3,12 +3,11 @@ import NavBar from "../../Components/NavBar";
 import "./ErrorPage.css";
 const ErrorPage = () => {
   const [errorMessage, setErrorMessage] = useState("");
-  const token = "8qlOkxz4wq";
   const userId = "User 01";
   const errorRoute = async () => {
     //Khi fetch local host backend sẽ đi qua các middleware và không có middleware chứa các router cụ thể, và đến router cuối cùng là router báo lỗi không có router phù hợp
     const response = await fetch(
-      `http://localhost:8000/?token=${token}&userId=${userId}`
+      `${process.env.BACKEND_URL}/?token=${process.env.USER_TOKEN}&userId=${userId}`
     );
     const data = await response.json();
     setErrorMessage(data.message);

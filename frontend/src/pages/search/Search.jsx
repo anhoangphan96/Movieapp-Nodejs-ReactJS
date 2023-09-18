@@ -11,7 +11,7 @@ const Search = () => {
   const [movieModaleOpen, setMovieModalOpen] = useState(false);
   const [curMovieID, setCurMovieID] = useState(0);
   const [movieTrailer, setMovieTrailer] = useState([]);
-  const token = "8qlOkxz4wq";
+
   const userId = "User 01";
   //Hàm để lấy data search dựa trên keywordSearch được lift state từ trang SearchForm
   //Nếu keyword là rỗng thì trả ra data search là array rỗng, còn nếu lỗi thì sẽ trả ra lỗi cho người dùng
@@ -20,7 +20,7 @@ const Search = () => {
     setIsLoading((prevState) => true);
     try {
       const response = await fetch(
-        `http://localhost:8000/api/movies/search?token=${token}&userId=${userId}&page=1`,
+        `${process.env.BACKEND_URL}/api/movies/search?token=${process.env.USER_TOKEN}&userId=${userId}&page=1`,
         {
           method: "POST",
           mode: "cors",
@@ -44,7 +44,7 @@ const Search = () => {
   const getTrailer = async function (movieId) {
     try {
       const response = await fetch(
-        `http://localhost:8000/api/movies/video?token=${token}&userId=${userId}`,
+        `${process.env.BACKEND_URL}/api/movies/video?token=${process.env.USER_TOKEN}&userId=${userId}`,
         {
           method: "POST",
           mode: "cors",
