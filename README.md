@@ -13,7 +13,7 @@ An movie website where display all the lastest released movies by it's category 
 \*Note: Please open link back-end first.
 
 - Back-end demo (Render) : [Link](https://movie-app-nqpk.onrender.com)
-- Front-end demo (Firebase) : [Link](#)
+- Front-end demo (Firebase) : [Link](https://movieapp-d44ea.web.app)
 
 ## Project Breakdown
 
