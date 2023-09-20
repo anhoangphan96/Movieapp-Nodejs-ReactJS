@@ -54,7 +54,7 @@ An movie website where display all the lastest released movies by it's category 
 
 url: http://localhost:3000
 
-change backend url to http://localhost:5000 in .env file
+change backend url to http://localhost:8000 in .env file
 
 ```
 $ cd client          // go to client folder
@@ -62,9 +62,9 @@ $ yarn # or npm i    // npm install packages
 $ npm start       // run it locally
 ```
 
-#### Server-side usage(PORT: 5000)
+#### Server-side usage(PORT: 8000)
 
-url: http://localhost:5000
+url: http://localhost:8000
 
 ```
 $ cd server   // go to server folder
