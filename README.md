@@ -53,6 +53,7 @@ An movie website where display all the lastest released movies by it's category 
 #### Frontend usage(PORT: 3000)
 
 url: http://localhost:3000
+
 change backend url to http://localhost:5000 in .env file
 
 ```
