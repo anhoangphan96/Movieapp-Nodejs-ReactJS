@@ -15,13 +15,13 @@ function Browse() {
   const requests = {
     //Với những link http request không có param page thì khi fetch mặc định thông số page là 1
     fetchNetflixOriginals: `/discover/tv?api_key=${API_KEY}&with_network=123`,
-    fetchTrending: `${process.env.BACKEND_URL}/api/movies/trending?token=${process.env.USER_TOKEN}&userId=${userId}&page=1`,
-    fetchTopRated: `${process.env.BACKEND_URL}/api/movies/top-rate?token=${process.env.USER_TOKEN}&userId=${userId}&page=2`,
-    fetchActionMovies: `${process.env.BACKEND_URL}/api/movies/discover?token=${process.env.USER_TOKEN}&userId=${userId}&genre=Action&page=3`,
-    fetchComedyMovies: `${process.env.BACKEND_URL}/api/movies/discover?token=${process.env.USER_TOKEN}&userId=${userId}&genre=Comedy&page=4`,
-    fetchHorrorMovies: `${process.env.BACKEND_URL}/api/movies/discover?token=${process.env.USER_TOKEN}&userId=${userId}&genre=Horror`,
-    fetchRomanceMovies: `${process.env.BACKEND_URL}/api/movies/discover?token=${process.env.USER_TOKEN}&userId=${userId}&genre=Romance`,
-    fetchDocumentaries: `${process.env.BACKEND_URL}/api/movies/discover?token=${process.env.USER_TOKEN}&userId=${userId}&genre=Documentary`,
+    fetchTrending: `${process.env.REACT_APP_BACKEND_URL}/api/movies/trending?token=${process.env.REACT_APP_USER_TOKEN}&userId=${userId}&page=1`,
+    fetchTopRated: `${process.env.REACT_APP_BACKEND_URL}/api/movies/top-rate?token=${process.env.REACT_APP_USER_TOKEN}&userId=${userId}&page=2`,
+    fetchActionMovies: `${process.env.REACT_APP_BACKEND_URL}/api/movies/discover?token=${process.env.REACT_APP_USER_TOKEN}&userId=${userId}&genre=Action&page=3`,
+    fetchComedyMovies: `${process.env.REACT_APP_BACKEND_URL}/api/movies/discover?token=${process.env.REACT_APP_USER_TOKEN}&userId=${userId}&genre=Comedy&page=4`,
+    fetchHorrorMovies: `${process.env.REACT_APP_BACKEND_URL}/api/movies/discover?token=${process.env.REACT_APP_USER_TOKEN}&userId=${userId}&genre=Horror`,
+    fetchRomanceMovies: `${process.env.REACT_APP_BACKEND_URL}/api/movies/discover?token=${process.env.REACT_APP_USER_TOKEN}&userId=${userId}&genre=Romance`,
+    fetchDocumentaries: `${process.env.REACT_APP_BACKEND_URL}/api/movies/discover?token=${process.env.REACT_APP_USER_TOKEN}&userId=${userId}&genre=Documentary`,
   };
   //Khai báo array rổng để sau khi fetching sẽ push các data của từng thể loại phim vào
   const movieArrTem = [];

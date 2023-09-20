@@ -16,4 +16,4 @@ app.use("/api/movies", moviesList);
 
 //Nếu gọi đến route không tồn tại sẽ trả về page lỗi
 app.use(error404.routeNotFound);
-app.listen(8000);
+app.listen(process.env.PORT || 8000);

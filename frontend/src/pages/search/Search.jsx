@@ -20,7 +20,7 @@ const Search = () => {
     setIsLoading((prevState) => true);
     try {
       const response = await fetch(
-        `${process.env.BACKEND_URL}/api/movies/search?token=${process.env.USER_TOKEN}&userId=${userId}&page=1`,
+        `${process.env.REACT_APP_BACKEND_URL}/api/movies/search?token=${process.env.REACT_APP_USER_TOKEN}&userId=${userId}&page=1`,
         {
           method: "POST",
           mode: "cors",
@@ -44,7 +44,7 @@ const Search = () => {
   const getTrailer = async function (movieId) {
     try {
       const response = await fetch(
-        `${process.env.BACKEND_URL}/api/movies/video?token=${process.env.USER_TOKEN}&userId=${userId}`,
+        `${process.env.REACT_APP_BACKEND_URL}/api/movies/video?token=${process.env.REACT_APP_USER_TOKEN}&userId=${userId}`,
         {
           method: "POST",
           mode: "cors",

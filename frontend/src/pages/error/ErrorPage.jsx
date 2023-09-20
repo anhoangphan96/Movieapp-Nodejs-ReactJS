@@ -7,7 +7,7 @@ const ErrorPage = () => {
   const errorRoute = async () => {
     //Khi fetch local host backend sẽ đi qua các middleware và không có middleware chứa các router cụ thể, và đến router cuối cùng là router báo lỗi không có router phù hợp
     const response = await fetch(
-      `${process.env.BACKEND_URL}/?token=${process.env.USER_TOKEN}&userId=${userId}`
+      `${process.env.REACT_APP_BACKEND_URL}/?token=${process.env.REACT_APP_USER_TOKEN}&userId=${userId}`
     );
     const data = await response.json();
     setErrorMessage(data.message);

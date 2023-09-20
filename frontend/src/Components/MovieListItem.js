@@ -40,7 +40,7 @@ const MovieListItem = (props) => {
               `https://api.themoviedb.org/3/movie/${movieId}/videos?api_key=381d90cbe832f9ed337e1407f33d8116`
             )
           : await fetch(
-              `${process.env.BACKEND_URL}/api/movies/video?token=${token}&userId=${userId}`,
+              `${process.env.REACT_APP_BACKEND_URL}/api/movies/video?token=${token}&userId=${userId}`,
               {
                 method: "POST",
                 mode: "cors",
